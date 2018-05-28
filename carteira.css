@@ -1,0 +1,96 @@
+html, body{
+	margin: 0;
+	padding: 0;
+}
+.title{
+  color: white;
+}
+.firstrow{
+  font-size:28px;
+}
+.cima{
+	margin: 0px;
+	padding: 0px;
+	border-top: 0px;
+	height: 300px;
+	width: 100%;
+	background-image: url("https://cdn.zmescience.com/wp-content/uploads/2017/05/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg");
+background-position: 30% 30%;
+}
+
+.container{
+	align-items: baseline;
+}
+
+.bc{
+	background: green;
+	margin: 10 20 20 10;
+}
+
+.invisivel{
+	border: none;
+}
+.parent{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.parent2{
+  display: flex;
+  justify-content:center;
+  align-content: flex-end;
+  }
+.mtable{
+  margin-top:100px;
+}
+
+
+.row{
+	height: 50px;
+	width: 300px;
+	/*bottom-padding: 50px;*/
+	/*margin-bottom: 50px;*/
+	border-spacing: 19px;
+}
+
+.space{
+	bottom-padding: 2000px;
+}
+
+#colred{
+	background-color: rgb(246, 66, 67);
+}
+
+#colblue{
+	background-color: rgb(102, 204, 255);
+}
+#sai{
+  margin-left:40%;
+}
+#percentage{
+  margin-left:10%;
+}
+.right{
+ margin-left: 40%;
+}
+
+.rowdown{
+  width:400px;
+}
+.left{
+  text-align: left;
+}
+
+.letter{
+  font-size: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.colorred{
+  color: rgb(246, 66, 67);
+}
+
+.colorblue{
+  color:rgb(10, 128, 255);
+}
