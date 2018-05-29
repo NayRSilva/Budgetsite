@@ -1,7 +1,7 @@
 
-var inatual, exatual, val, signal, sum, minus, tex, sumover, sumdown, p;
+var inatual, exatual, val, signal, sum, minus, tex, sumover, sumdown, p;/*variaveis globais*/
 
-function Ler() {
+function Ler() {/*funcao que le os valores essenciais da pagina*/
   signal= document.getElementById("myselect").value;
   inatual= parseFloat(document.getElementById("entra").innerText);
   val=document.getElementById("numero").value;
@@ -19,14 +19,14 @@ function Ler() {
 }
 }
 
-function income(){
+function income(){/*fornece o saldo*/
   
   sum= parseFloat(inatual) + parseFloat(val);
   document.getElementById("entra").innerHTML= sum;
   total();
 }
 
-function expenses(){
+function expenses(){/*fornece as despesas*/
   
   minus= parseFloat(exatual) - parseFloat(val);
   document.getElementById("sai").innerHTML= minus;
@@ -34,7 +34,7 @@ function expenses(){
 }
 
 
-function total(){
+function total(){/*calcula o total*/
   var a,b, result;
   a=parseFloat(document.getElementById("entra").innerText)
   b= parseFloat(document.getElementById("sai").innerText)
@@ -42,7 +42,8 @@ function total(){
   document.getElementById("result").innerHTML=result;
 }
 
-function NewRowLeft(){
+function NewRowLeft(){/*cria nova linha e celula na tabela para
+adicionar os novos valores*/
   var table, row, newcell0, newcell1;
   table= document.getElementById("tabledown");
   row= table.insertRow(1);
@@ -64,7 +65,7 @@ function NewRowRight(){
   newcell2.innerHTML= p + "%";
 }
 
-function Percentage(){
+function Percentage(){/*calculo da percentagem*/
   
   if(signal ==="-"){
   sumover= parseFloat(val) + parseFloat(document.getElementById("sai").innerText);
