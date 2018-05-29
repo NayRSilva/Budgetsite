@@ -1,4 +1,5 @@
-html, body{
+html, body{/*usado para sumir com o espaço em branco entre o topo da pg
+	e o primeiro div*/
 	margin: 0;
 	padding: 0;
 }
@@ -8,7 +9,7 @@ html, body{
 .firstrow{
   font-size:28px;
 }
-.cima{
+.cima{/*posicionamento e tamanho do primeiro div*/
 	margin: 0px;
 	padding: 0px;
 	border-top: 0px;
@@ -18,19 +19,14 @@ html, body{
 background-position: 30% 30%;
 }
 
-.container{
+.container{/*Alinhando elementos na pagina atraves de flexbox*/
 	align-items: baseline;
 }
 
-.bc{
-	background: green;
-	margin: 10 20 20 10;
-}
-
-.invisivel{
+.invisivel{/*remove borda da tabela do primeiro div*/
 	border: none;
 }
-.parent{
+.parent{/*utiliza flexbox para posicionar os elementos*/
   display: flex;
   justify-content: center;
   align-content: center;
@@ -48,8 +44,6 @@ background-position: 30% 30%;
 .row{
 	height: 50px;
 	width: 300px;
-	/*bottom-padding: 50px;*/
-	/*margin-bottom: 50px;*/
 	border-spacing: 19px;
 }
 
@@ -81,7 +75,7 @@ background-position: 30% 30%;
   text-align: left;
 }
 
-.letter{
+.letter{/*altera propriedades da fonte da tabela debaixo*/
   font-size: 20px;
   margin-left: 10%;
   margin-right: 10%;
