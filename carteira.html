@@ -5,65 +5,71 @@
 	
 
 	<link rel="stylesheet" type="text/css" href="carteira.css">
-	<script type="text/javascript" src="carteira.js"></script>
 
 	<title>Carteira </title>
 </head>
+
 <body onload="javascript: data()"><!-- a funcao data e a unica 
 que carrega com a pagina -->
-<div class="cima parent2">
+	<div class="cima parent2">
 
-<table class="mtable">
-  <tr class="space">
-    <td class="title">Available budget <span id="data"> </span></td>
-<tr class="space">
-	<th class="firstrow row" id="result">0</th>
-	</tr>
-	<tr class="space">
-    <td class="row" id="colblue">Income + <span class="right" id="entra">0</span></td>
-</tr>
-  
-<tr class="space">
-  <td class="row" id="colred">Expenses -<span id="sai">0</span><span id="percentage">-</span></td>
-</tr>
+	  <table class="mtable" id="table_res">
+	    <tbody>
+	      <tr class="space">
+						<td class="title">Available budget <span id="data"> </span></td>
+	      </tr>
+	      <tr class="space">
+	    			<th class="firstrow row" id="result">0</th>
+	   		 </tr>
+	    	 <tr class="space">
+	      		<td class="row in" >Income + <span class="right" id="income">0</span></td>
+	  			</tr>
 
-</table>
+		  		<tr class="space">
+	    			<td class="row ex" >Expenses -<span id="expense">0</span><span id="percentage">-</span></td>
+	 		 		</tr>
+				</tbody>
 
- </div>
-  <div class="parent">
-  <form id="form1">
-<select id="myselect">
-  <option value=""> </option>
-	<option value="+">+</option>
-		<option value="-">-</option>
-  
-</select>
-   
-<input type="text" name="quantia" placeholder="Add description" id="description">
-<input type="text" name="quantia" placeholder="Value" id="numero">
-    <button type="button" onclick="Ler()"> Submit </button><!--o tipo botao
-impede que a pagina seja recarregada toda vez que o botao for clicado-->
-  </form>
-  </div>
-  
-  <div class="parent">
-  <table class="parent letter colorblue" id="tabledown">
-    <tr>
-    <td class="rowdown firstrow left" id="positive">Incomes</td>
-     <td></td>
-      
-    </table>
-    <table class="letter colorred parent" id="neg">
-    <tr>
-    <td class="rowdown firstrow left" id="positive">Expenses</td>
-      <td></td>
-      <td></td>
-    <!--  <th class="rowdown firstrow left"> Expenses</td>-->
+		</table>
+
+	</div>
+	<div class="parent">
+	  <form id="form1">
+	    <select id="myselect">
+	      <option value=""> </option>
+	    	<option value="+">+</option>
+	    	<option value="-">-</option>
+			</select>
+		
+	    <input type="text" name="quantia" placeholder="Add description" id="description">
+	    <input type="text" name="quantia" placeholder="Value" id="numero">
+	    <button id="adiciona_desp" type="button"> Submit </button>
+	  </form>
+	</div>
+	
+	<div class="parent">
+    <table class="parent letter colorblue">
+        <tbody id="tablepos">
+          <tr>
+          	<td class="rowdown firstrow left">Incomes</td>
+          </tr>
+          <tr>
+          	<td></td>
+          	<td></td>
+          </tr>
+				</tbody>   
+			</table>
+          
+    <table class="letter colorred parent" >
+        <tbody id="tableneg">
+          <tr>
+          	<td class="rowdown firstrow left">Expenses</td>
+        </tbody>
     </table>
  
-    </div>
+	</div>
 
-
-
+	<script src="carteira.js"></script>
 </body>
+
 </html>

@@ -1,35 +1,39 @@
-html, body{/*usado para sumir com o espaço em branco entre o topo da pg
-	e o primeiro div*/
+html, body{
 	margin: 0;
 	padding: 0;
 }
 .title{
   color: white;
+  text-align: center;
+  font-size: 3vh;
 }
 .firstrow{
   font-size:28px;
 }
-.cima{/*posicionamento e tamanho do primeiro div*/
+.cima{
 	margin: 0px;
-	padding: 0px;
+  padding: 0px;
+  padding-bottom: 10px;
 	border-top: 0px;
 	height: 300px;
-	width: 100%;
+  width: 100%;
+  
 	background-image: url("https://cdn.zmescience.com/wp-content/uploads/2017/05/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg");
 background-position: 30% 30%;
 }
 
-.container{/*Alinhando elementos na pagina atraves de flexbox*/
+.container{
 	align-items: baseline;
 }
 
-.invisivel{/*remove borda da tabela do primeiro div*/
+.invisivel{
 	border: none;
 }
-.parent{/*utiliza flexbox para posicionar os elementos*/
+.parent{
   display: flex;
   justify-content: center;
   align-content: center;
+  margin-top: 2vh;
 }
 .parent2{
   display: flex;
@@ -38,12 +42,15 @@ background-position: 30% 30%;
   }
 .mtable{
   margin-top:100px;
+
 }
 
 
 .row{
 	height: 50px;
 	width: 300px;
+	/*bottom-padding: 50px;*/
+	/*margin-bottom: 50px;*/
 	border-spacing: 19px;
 }
 
@@ -54,11 +61,17 @@ background-position: 30% 30%;
 #colred{
 	background-color: rgb(246, 66, 67);
 }
+.ex{
+    background-color: rgb(246, 66, 67);
+}
 
 #colblue{
 	background-color: rgb(102, 204, 255);
 }
-#sai{
+.in{
+    background-color: rgb(102, 204, 255);
+}
+#expense{
   margin-left:40%;
 }
 #percentage{
@@ -75,7 +88,7 @@ background-position: 30% 30%;
   text-align: left;
 }
 
-.letter{/*altera propriedades da fonte da tabela debaixo*/
+.letter{
   font-size: 20px;
   margin-left: 10%;
   margin-right: 10%;
