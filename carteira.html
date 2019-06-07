@@ -16,31 +16,29 @@ que carrega com a pagina -->
 	  <table class="mtable" id="table_res">
 	    <tbody>
 	      <tr class="space">
-						<td class="title">Available budget <span id="data"> </span></td>
+			<td class="title">Available budget <span id="data"> </span></td>
 	      </tr>
 	      <tr class="space">
-	    			<th class="firstrow row" id="result">0</th>
-	   		 </tr>
+	    		<th class="firstrow row" id="result">0</th>
+		</tr>
 	    	 <tr class="space">
 	      		<td class="row in" >Income + <span class="right" id="income">0</span></td>
-	  			</tr>
+	  		</tr>
 
-		  		<tr class="space">
-	    			<td class="row ex" >Expenses -<span id="expense">0</span><span id="percentage">-</span></td>
-	 		 		</tr>
-				</tbody>
-
-		</table>
-
+		  <tr class="space">
+	    		<td class="row ex" >Expenses -<span id="expense">0</span><span id="percentage">-</span></td>
+	 	  </tr>
+		</tbody>
+	    </table>
 	</div>
+	
 	<div class="parent">
 	  <form id="form1">
 	    <select id="myselect">
-	      <option value=""> </option>
+	     	<option value=""> </option>
 	    	<option value="+">+</option>
 	    	<option value="-">-</option>
-			</select>
-		
+		</select>		
 	    <input type="text" name="quantia" placeholder="Add description" id="description">
 	    <input type="text" name="quantia" placeholder="Value" id="numero">
 	    <button id="adiciona_desp" type="button"> Submit </button>
@@ -48,26 +46,25 @@ que carrega com a pagina -->
 	</div>
 	
 	<div class="parent">
-    <table class="parent letter colorblue">
-        <tbody id="tablepos">
-          <tr>
-          	<td class="rowdown firstrow left">Incomes</td>
-          </tr>
-          <tr>
-          	<td></td>
-          	<td></td>
-          </tr>
-				</tbody>   
-			</table>
+   		 <table class="parent letter colorblue">
+      			<tbody id="tablepos">
+          			<tr>
+          				<td class="rowdown firstrow left">Incomes</td>
+        			</tr>
+         			<tr>
+          			<td></td>
+          			<td></td>
+				</tr>
+			</tbody>   
+		</table>
           
-    <table class="letter colorred parent" >
-        <tbody id="tableneg">
-          <tr>
-          	<td class="rowdown firstrow left">Expenses</td>
-        </tbody>
-    </table>
- 
-	</div>
+  		  <table class="letter colorred parent" >
+      			  <tbody id="tableneg">
+        			  <tr>
+          				<td class="rowdown firstrow left">Expenses</td>
+      			  </tbody>
+   		 </table>
+ 	</div>
 
 	<script src="carteira.js"></script>
 </body>
